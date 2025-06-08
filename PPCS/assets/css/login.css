@@ -1,0 +1,175 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body, html {
+    height: 100%;
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: rgba(245, 240, 225, 0.95);
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+.left-panel {
+    flex: 1;
+    background-color: #d2b48c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left-panel img {
+    width: 100%;
+    max-width: 650px;
+    border-radius: 100px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+.right-panel {
+    flex: 1;
+    background-color: #1e1e1e;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+}
+
+.login-box {
+    max-width: 400px;
+    width: 100%;
+}
+
+.logo h2 {
+    font-size: 32px;
+    line-height: 1;
+    text-align: center;
+}
+
+.logo span {
+    font-weight: bold;
+}
+
+.login-box h3 {
+    margin: 20px 0;
+    font-weight: 400;
+    text-align: center;
+}
+
+form input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 6px;
+    background-color: #2a2a2a;
+    color: white;
+}
+
+form input::placeholder {
+    color: #aaa;
+}
+
+.options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.sign-in {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.sign-in:hover {
+    background-color: #f0f0f0;
+}
+
+.google-signin {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.google-signin span {
+    display: block;
+    margin-bottom: 10px;
+    color: #aaa;
+}
+
+.google-signin button {
+    background: none;
+    border: 1px solid #aaa;
+    padding: 10px 20px;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.google-signin button:hover {
+    background-color: #333;
+}
+
+.signup-text {
+    font-size: 14px;
+    color: #bbb;
+    text-align: center;
+}
+
+.signup-text a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.options label {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.options input[type="checkbox"] {
+    margin: 0;
+    margin-right: 8px;
+    width: 16px;
+}
+
+.options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
