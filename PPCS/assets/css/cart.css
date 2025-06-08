@@ -1,0 +1,105 @@
+.cart-container {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+.cart-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+.cart-table th, .cart-table td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+}
+.cart-table th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+.cart-table td img {
+    max-width: 80px;
+    height: auto;
+    border-radius: 5px;
+}
+.cart-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+.cart-actions a.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+.cart-actions a.btn:hover {
+    background-color: #0056b3;
+}
+.cart-actions .total-amount {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #333;
+}
+.empty-cart-message {
+    text-align: center;
+    padding: 50px;
+    font-size: 1.2em;
+    color: #555;
+}
+.remove-item-btn {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.remove-item-btn:hover {
+    background-color: #c82333;
+}
+.update-quantity-form {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.update-quantity-form input[type="number"] {
+    width: 50px;
+    padding: 5px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    text-align: center;
+}
+.update-quantity-form button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.update-quantity-form button:hover {
+    background-color: #218838;
+}
+.navbar .cart-link {
+    background-color: #f44336;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    transition: background-color 0.3s ease;
+}
+.navbar .cart-link:hover {
+    background-color: #d32f2f;
+}

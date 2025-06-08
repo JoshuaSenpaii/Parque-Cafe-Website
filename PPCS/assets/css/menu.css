@@ -1,0 +1,161 @@
+.menu-interactive {
+    padding: 40px 0;
+    background-color: #f9f9f9;
+}
+
+.menu-interactive .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #fff;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.menu-container-flex {
+    display: flex;
+    min-height: 500px;
+}
+
+/* Left Sidebar */
+.menu-sidebar {
+    width: 250px;
+    padding: 25px;
+    border-right: 1px solid #eee;
+    background-color: #fefefe;
+    flex-shrink: 0;
+}
+
+.menu-sidebar h3 {
+    color: #333;
+    font-size: 1.1em;
+    margin-top: 25px;
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #eee;
+}
+
+.menu-sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu-sidebar li {
+    padding: 12px 10px;
+    cursor: pointer;
+    color: #555;
+    font-size: 1em;
+    transition: background-color 0.2s ease, color 0.2s ease;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+
+.menu-sidebar li:hover {
+    background-color: #e6f7f2;
+    color: #795548;
+}
+
+.menu-sidebar li.active {
+    background-color: #dcf7f1;
+    color: #795548;
+    font-weight: bold;
+
+    border-left: 3px solid #795548;
+    padding-left: 7px;
+}
+
+/* Right Content */
+.menu-content-display {
+    flex-grow: 1;
+    padding: 25px;
+    background-color: #fff;
+}
+
+.coffee-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 25px;
+}
+
+.coffee-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: #fff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    text-align: center;
+}
+
+.coffee-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+.coffee-img {
+    position: relative;
+    width: 100%;
+    height: 180px;
+    overflow: hidden;
+    border-bottom: 1px solid #eee;
+}
+
+.coffee-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.coffee-header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    text-align: center;
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+
+@media (max-width: 768px) {
+    .menu-container-flex {
+        flex-direction: column;
+    }
+
+    .menu-sidebar {
+        width: 100%;
+        border-right: none;
+        border-bottom: 1px solid #eee;
+        padding: 15px;
+    }
+
+    .menu-sidebar ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 8px;
+    }
+
+    .menu-sidebar li {
+        padding: 8px 15px;
+        margin-bottom: 0;
+    }
+
+    .menu-content-display {
+        padding: 15px;
+    }
+
+    .coffee-grid {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+        gap: 15px;
+    }
+
+    .coffee-img {
+        height: 120px;
+    }
+}
